@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+			<title>My Webpage</title>
+
+<link type="text/css" rel="stylesheet" href="css/stylesheet.css"/>		
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+	
+<body>
+
+
+			<span id="menubtn"onclick="openNav()">&#9776;</span> 
+	
+
+			<div id="header"> 
+		
+			
+				<div id="nav">
+
+					<div class="top">										
+						<a href="#contact" class="smoothScroll">Contact</a>	
+						<a href="https://drive.google.com/open?id=0B2XC0GBlWMj1NzZONXIxeU1YZmc" class="smoothScroll">Resume</a>				
+						<a href="#portfolio" class="smoothScroll">Portfolio</a>
+						<a href="#about" class="smoothScroll" >About Me</a>
+			
+							<div class="logo">
+								<img src="img/mylogo.jpg" alt="logo"></div>
+							</div>
+	
+
+
+			<!--Side Nav-->
+			<div id="mySidenav" class="sidenav">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
+				<a href="#about" class="smoothScroll">About</a>
+				<a href="#portfolio" class="smoothScroll">Portfolio</a>
+				<a href="https://drive.google.com/open?id=0B2XC0GBlWMj1NzZONXIxeU1YZmc">Resume</a>
+				<a href="#contact" class="smoothScroll">Contact</a>
+			</div>
+
+				</div>
+				
+			</div>
+					
+						
+	<div id="aboutMe">
+
+			<a id="about"></a>
+			<br><br><br><br><br>
+
+
+							<h1>About Me</h1>
+
+
+			<div id="week-wrap">
+
+					<div id="card" onclick="flip()">
+						<div class="figcaption">Education</div>
+						<img src="img/cap.png" alt="flipcard" />
+					  <div class="back"><h4>2012- Graduated from DePaul with a Business<br>Management Degree  
+					  <br><br> 2016- Started teaching myeself web development <br><br> <u>Current goal</u> is to get hired as a front end web developer.</h4>			 
+					</div> 
+					  
+					</div>				    
+					    <div id="card2" onclick="flip2()">
+						<div class="figcaption">Skills</div>
+						<img src="img/coding.png" alt="flipcard" />
+					      <div class="back"><h4>HTML<br><br> CSS/SASS<br><br>JavaScript<br><br>jQuery<br><br>Bootstrap<br><br> Adobe Photoshop</h4>
+					</div> 
+					        
+					      
+					</div>
+					      
+					       <div id="card3" onclick="flip3()">
+						<div class="figcaption">Hobbies</div>
+						<img src="img/guitar.png" alt="flipcard" />
+					      <div class="back"><h4>Playing guitar <br><br>Producing electronic music<br><br> Oil painting<br><br> Working out/Muay Thai <br><br>  Web developing</h4>
+					    
+
+					  </div> 
+			       
+			</div>
+				      	
+					   
+
+
+		</div>
+	</div>
+
+
+
+
+	<div id="content2">
+
+		<a id="portfolio"></a>
+		<br><br>
+				
+							<h6>Portfolio</h6>
+	
+														
+		<div class="project">
+
+
+			<div class="web1">
+					<h3>My portfolio website</h3>
+						
+			<img class="portfolio1" src="img/myweb.jpg" alt="portfolio pic">
+				<p>	
+								 
+				<br>Created this site while reading along with Jon Duckett books and countless online resources.
+				<br> I used HTML, CSS, Javascript, and Jquery to create the web page.	
+				<br> The site design has been constantly changing because I keep learning new/better practices
+				<br> Learned how to make sites more responsive to mobile devices. 
+				<br> Learned how to use media queries
+				<br><br><br>
+					<a  class="box"  href="index.html">
+					View Website
+					</a>
+					<a  class="box2"  href="https://github.com/dennislee89/dennislee89.github.io">
+					View GitHub
+					</a>
+				</p>
+
+							 <div class="tags">  
+							<span class="tag">HTML</span>
+							<span class="tag">CSS</span>
+							<span class="tag">JavaScript</span>
+							<span class="tag">jQuery</span>														
+							</div>
+		</div>
+
+								<br><br><br><br><br><br>
+ 									<hr>
+
+
+		<div class="web1">
+					<h3> Dallas Badminton Club</h3>
+						
+			<img class="portfolio1" src="img/portfolio1.jpg" alt="badmintonSite">
+				<p>	
+					
+				This was the first website I created. 
+
+				<br> I used HTML, CSS, Javascript, and Jquery to create the web page.
+				<br> Learned to create an image slider, image gallery, and a dropdown menu. 
+				<br> Learned how to make sites more responsive to mobile devices.
+				<br> A lot of trial and error went to making this website. 
+				<br> Learned how to use media queries
+				<br><br><br>
+					<a  class="box"  href="index2.html">
+					View Website
+					</a>
+					<a  class="box2"  href="https://github.com/dennislee89/badmintonSite">
+					View GitHub
+					</a>
+				</p>
+
+							 <div class="tags">  
+							<span class="tag">HTML</span>
+							<span class="tag">CSS</span>
+							<span class="tag">JavaScript</span>
+							<span class="tag">jQuery</span>														
+							</div>
+		</div>
+
+								<br><br><br><br><br><br>
+ 									<hr>
+
+	<div class="web1">
+					<h3> Bulls Fan Site</h3>
+						<br><br>
+			<img class="portfolio1" src="img/bullsSite.jpg" alt="bullssite">
+				<p>	
+					
+				<br> I used HTML, CSS, Javascript, and Jquery to create the web page.
+				<br> Learned how to create content panel, carousel, and jquery animations.
+				<br> Built the site with mobile device first in mind.
+				<br> Created script that changes content/chart based on button selection.
+				<br> Applied chart.js and html canvas.
+				<br> 				
+				<br><br>
+					<a  class="box"  href="bulls-main.html">
+					View Website
+					</a>
+					<a  class="box2"  href="https://github.com/dennislee89/bullsfansite.git">
+					View GitHub
+					</a>
+				</p>
+
+
+				 		<div class="tags">  
+							<span class="tag">HTML</span>
+							<span class="tag">CSS</span>
+							<span class="tag">JavaScript</span>
+							<span class="tag">jQuery</span>
+							<span class="tag">SASS</span>
+						</div>
+	</div>
+
+					<br><br><br><br><br><br>
+ 									<hr>
+
+
+	<div class="web1">
+					<h3 >Albert Bierstadt Tribute Page</h3>
+						<br><br>
+			<img class="portfolio1" src="img/tributeSite.jpg" alt="tributesite">
+				<p>	
+					
+				<br> I used HTML, CSS, Javascript, Bootstrap, and Jquery to create the web page.
+				<br> First attempt with bootstrap with this site.
+				<br> Learned how to create modal images with image gallery.
+				<br> Created a simple timeline with css. 
+				<br> 				
+				<br><br>
+					<a  class="box"  href="tribute.html">
+					View Website
+					</a>
+					<a  class="box2"  href="https://github.com/dennislee89/tributeSite.git">
+					View GitHub
+					</a>
+				</p>
+						<div class="tags">  
+							<span class="tag">HTML</span>
+							<span class="tag">CSS</span>
+							<span class="tag">JavaScript</span>
+							<span class="tag">jQuery</span>
+							<span class="tag">Bootstrap</span>						
+						</div>
+	</div>
+
+							<br><br><br><br><hr>
+
+					<h3 style="color: gold; ">Other Projects</h3>
+						
+
+							<h3>To do list</h3>
+							<br>
+				<p data-height="265" data-theme-id="0" data-slug-hash="Krjgxj" data-default-tab="css,result" data-user="dennislee89" data-embed-version="2" data-pen-title="To do list" class="codepen">See the Pen <a href="http://codepen.io/dennislee89/pen/Krjgxj/">To do list</a> by dennislee89 (<a href="http://codepen.io/dennislee89">@dennislee89</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+				<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+		
+
+
+		</div>
+	</div>
+
+
+	<div id="content4" style="text-align: center;">
+		
+			<a id="contact"></a>
+				<br><br><br><br><br>
+							<h3>Contact</h3>
+
+
+	<form action="https://formspree.io/dennislee0890@hotmail.com"
+      method="POST">
+    
+     	<label style="position: relative; left: 10%;  "><span style="color: white;">Your Name:</span>
+		<input type="text" name="name" style="width: 280px; "></label>
+		<br>
+		<label style="position: relative; left: 10%;"><span style="color: white;" >Your Email:</span>
+    	<input type="email" name="_replyto" style="width: 280px; "></label>
+    	<br>
+    	<label style="position: relative; left: 10%;"><span style="color: white;">Questions/Request</span>
+    	<textarea name="message" style="width: 280px; height: 150px;"></textarea></label>
+		<input type="submit" value="Send" style="font-size: 20px;">
+
+	</form> 
+
+		<p style="  text-align: center; color: white; font-size: 26px; margin: 0;"> <br><br> 
+														
+						<div id="email">
+							Email: DennisLee1989@gmail.com
+									<br>						 
+						</div>	 		
+							
+							 <a href="https://www.linkedin.com/in/dennis-lee-b4785633?trk=hp-identity-name"><img id="linked" src="img/linkedin.png" alt="linkedin"></a>
+							 <a href="https://github.com/dennislee89"><img id="git" src="img/git.png" alt="git"></a>		
+							 <a href="https://codepen.io"><img id="face" src="img/codepen.png" alt="codepen"></a>	
+
+							 		<br><br>
+		</p>
+
+	</div> <!--normal above content4--> 								
+
+	
+
+<script type="text/javascript" src="jquery.js"></script> 
+<script type="text/javascript" src="java/script.js"></script>  
+<script type="text/javascript" src="java/smoothscroll.js"></script>
+
+
+</body>
+</html>
