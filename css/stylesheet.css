@@ -1,10 +1,44 @@
 
 #header{
-	background-image:url(../img/head.jpg);
+	background-image:url(../img/hero.jpg);
   background-size:cover; 
    background-repeat:no-repeat;
     background-position: center; 
     height: 1000px;
+}
+
+
+.webtitle span{
+  color: white;
+  position: absolute;
+  top: 30%;
+  font-size: 5em;
+  text-align: center; 
+   text-align: center; 
+    width:100%; 
+  height:0;
+}
+
+.jobtitle span{
+  color: white;
+  position: absolute;
+  top: 45%;
+  font-size: 2em;
+  text-align: center; 
+   text-align: center; 
+    width:100%; 
+  height:0;
+
+}
+
+.parallax {
+    /* The image used */
+    background-image: url(../img/mountain.jpg);
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
@@ -89,24 +123,7 @@ background-color: #202020;
   border-style: solid;
 }
 
-#table{
-	text-align: center;
-	font-size: 3em;
-	color: black;	
-	position: relative;  
-     height:100px;
-    width:100px;
-    left:28%;
-    top:30%;
-    margin-top:-50px;
-    margin-left:-50px;
-  font-family: 'Open Sans', sans-serif;
-  
-}
 
-
-
- 
 .logo{
 	width: 6%;
 	position: absolute;
@@ -186,14 +203,16 @@ h5{
 
 
 h6{
-	font-size: 5em;
-	color: orange;
+	font-size: 7em;
+	color: white;
 	text-align: center;
 	text-decoration: underline;
+  padding-bottom: 25%;
+   -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: black;
+
 }
-
-
-
 
 
 #content1 {
@@ -202,13 +221,6 @@ h6{
 }
 
 
-
-
-.icons {
-	display:inline-block;
-	margin: 1%;
-	text-align: center;
-}
 
 /*
 #nav {
@@ -235,7 +247,6 @@ h6{
 
 
 
-
 }
 
 
@@ -259,9 +270,6 @@ label {
 }
 
 
-
-
-
 #content4 {
 	background-color: #35586C ;
 
@@ -273,13 +281,6 @@ form {
 	display: inline-block;
 }
 
-
-
-
-#content1{
-	background-image: url(../img/beach.jpg);
-	height: 1200px;
-}
 
 
 #post1,#post2,#post3 {
@@ -298,6 +299,11 @@ form {
 
 
 /* Web-Portfolio page*/ 
+#portfolio{
+  height: 1000px;
+}
+
+
 .web1 p{
 	font-size: 1.4em;
 	margin-right: 20%;
@@ -352,6 +358,7 @@ h4 {
   width: auto;
   background-color: #efefef;
   text-align: center;
+  padding-bottom: 5%;
 }
 #card,
 #card2,
@@ -378,7 +385,7 @@ h4 {
   backface-visibility: hidden;
   position: absolute;
   color: white;
-  background-color: teal;
+  background-color: #0099cc;
   width: 100%;
   height: 100%;
   -webkit-transform: rotateY(180deg);
@@ -413,27 +420,6 @@ h4 {
   transform: rotateY(180deg);
 }
 
-
-
-/*Liquid Columns*/
-.column1, .column2 {
-	text-align: center;
-	width: 40%;
-	float: left;
-	margin: 5%	
-}
-
-.column1 img{
-	width: 100%;
-}
-
-.column2 img{
-	width: 100%;
-}
-
-.column1:hover, .column2:hover{
-	opacity: 0.8;
-}
 
 .box {
 	background-color: #202020;
@@ -471,17 +457,14 @@ h4 {
 }
 
 
-
-.designs{
-	text-align: center;
-	display:inline-block; 
-	padding: 0.5%;
+#email a{ 
+  color: white; 
 }
 
-.designs img{
-	width: 31%;
-	padding: 0.5%;
+#email a:hover{ 
+  color: gold; 
 }
+
 
 /* Media Queries*/
 
@@ -506,7 +489,6 @@ h4 {
 
 @media screen and (max-width: 1000px) {
 	h2 { font-size: 2.3em; }
-	#header{background-size: }
 	#header{height: 800px;}
 	#content1{height: 700px;}
 	.headpic{height: 800px;}
@@ -514,18 +496,12 @@ h4 {
 	.web2 p{font-size: 0.9em;}
 	.figcaption{font-size: 1.5em;}
 	.figcaption{color: black;}
-
 }
 
 @media screen and (max-width: 770px) {
 	h2 { font-size: 1.5em; }
 	#header{height: 600px; }
 	#content1{height: 600px;}
-	.cd-timeline-content p{font-size: 0.6em;}
-	.column4, .column5, .column6 li{font-size: 0.6em;}
-  .column6 span{font-size: 1em;}
-	.cd-timeline-content h2{font-size: 1.5em;}
-  .column4 span{font-size: 1.5em;}
 	#title{font-size: 2.5em; top: 20%; right: 15%; } 
 	.top a{font-size: 0.34em;}  
 	.top a{margin-top: 35px;} 
@@ -534,14 +510,11 @@ h4 {
 	h6{font-size: 3em;}
 	.box{font-size: 0.9em;}
 	#nav{height: 90px;}
-	.logo{width: 20%;}
+	.logo{width: 12%;}
 	.web1 p{font-size: 0.9em;}
-	
 	h5{font-size: 2.5em;}
   #linked, #face, #git{width: 10%;}
   #email{font-size: 1em;}
-  .column6 p{font-size: 0.8em;}
-  .column4 p{font-size: 1.2em;}  
    #front3{width: 10px;}   
    h4{font-size: 1.4em;}
    .figcaption{font-size: 2em;}
@@ -552,10 +525,12 @@ h4 {
    .designs img{width: 100%; padding: 0.5%;}
    	#card, #card2, #card3 {-webkit-backface-visibility: hidden; display: block;max-width: 100%;  }
    	#back{-webkit-backface-visibility: hidden;} 
-  #header {background-size: 550px; }
+  #header {background-size: 1050px; }
   .portfolio1{ width: 100%;}
   .top a{display: none;}
  	#menubtn{display: block; font-size: 1.8em;}
+  .webtitle span{font-size: 3.5em;}
+  .jobtitle span{font-size: 1.2em;}
 }
 
 
